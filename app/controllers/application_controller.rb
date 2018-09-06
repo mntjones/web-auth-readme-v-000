@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
   private
   
     def authenticate_user
-      
+      client_id = ENV[FOURSQUARE_CLIENT_ID]
+      redirect_uri = CGI.escape()
     end
     
     def logged_in?
