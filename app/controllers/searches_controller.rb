@@ -30,6 +30,7 @@ class SearchesController < ApplicationController
   end
   
   def friends
-    resp = Faraday.get("https://api.foursquare.com/v2/users/self/friends")
+    resp = Faraday.get("https://api.foursquare.com/v2/users/self/friends") do |req|
+      
   end
 end
